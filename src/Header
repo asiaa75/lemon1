@@ -1,0 +1,19 @@
+import "./Header.css";
+
+function Header() {
+    return (
+     <header>
+      <img src="/logo192.png" alt="Logo" className="logo"/>
+      <h1>Little Lemon</h1>
+      Homepage
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        </a>
+    </header>
+  );
+}
+export default Header;

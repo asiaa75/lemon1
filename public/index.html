@@ -10,6 +10,8 @@
     <meta name="og:title" content="Little"/>
     <meta name="og:image" content="Image"/>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <script src="https://raw.githubusercontent.com/courseraap/capstone/main/api.js"></script>
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -25,19 +27,38 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+      <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script type="module" src="/src/Main.js"></script>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="main-grid">
+     
+</div>
+    <form style="display: grid; max-width: 200px; gap: 20px">
+   <label for="res-date">Choose date</label>
+   <input type="date" id="res-date">
+   <label for="res-time">Choose time</label>
+   <select id="res-time ">
+      <option>17:00</option>
+      <option>18:00</option>
+      <option>19:00</option>
+      <option>20:00</option>
+      <option>21:00</option>
+      <option>22:00</option>
+   </select>
+   <label for="guests">Number of guests</label>
+   <input type="number" placeholder="1" min="1" max="10" id="guests">
+   <label for="occasion">Occasion</label>
+   <select id="occasion">
+      <option>1</option>
+      <option>2</option>
+   </select>
+   <input type="submit" value="Make Your reservation">
+</form>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
+    
+      
     -->
   </body>
 </html>

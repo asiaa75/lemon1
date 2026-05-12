@@ -1,0 +1,16 @@
+.nav {
+background: #ddd;
+  padding: 10px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.nav-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
